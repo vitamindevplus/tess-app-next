@@ -1,5 +1,5 @@
 {
-  "name": "tess-app-next",
+  "name": "vitaminshare_client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.0.0",
+    "@next/font": "^13.2.4",
     "@types/node": "18.15.11",
-    "@types/react": "18.0.32",
+    "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
+    "axios": "^1.3.4",
+    "js-cookie": "^3.0.1",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.3"
+    "react-hook-form": "^7.43.9",
+    "react-slideshow-image": "^4.2.1",
+    "typescript": "5.0.3",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.3",
+    "sass": "^1.60.0"
   }
 }

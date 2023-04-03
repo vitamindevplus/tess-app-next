@@ -1,0 +1,111 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        @media screen and (max-width: 1024px) {
+            margin-left: 1rem;
+        }
+        & h1 {
+            margin-left: 10px;
+        }
+    }
+    
+    & .menu-desktop{
+        display: flex;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        & .menu-items{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: 0.4s;
+            margin-left: 0.625rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            &:hover{
+                background: grey;
+                color: white;
+                & img:not(.avatar) {
+                    filter: brightness(0) invert(1);
+                }
+            }
+            & > div {
+                font-size: 14px;
+                margin-left: 10px;
+            }
+            & .avatar {
+                vertical-align: middle;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    & .menu-mobile{
+        display: none;
+        cursor: pointer;
+        padding-right: 2rem;
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
+    }
+}
+
+.menu-mobile-content{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+    & .menu-items{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: 0.4s;
+        padding: 15px 15px;
+        border-radius: 5px;
+        &:hover{
+            background: grey;
+            color: white;
+            & img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        & > div {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.4s;
+    margin-left: 10px;
+    & > div{
+        margin-left: 10px;
+    }
+    &:hover{
+        background: grey;
+        color: white;
+        & img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+
+
+
